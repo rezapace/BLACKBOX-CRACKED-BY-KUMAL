@@ -1,0 +1,1 @@
+import{MDCRipple}from"@material/ripple";let ripple={MDCRipple:MDCRipple};export{ripple};

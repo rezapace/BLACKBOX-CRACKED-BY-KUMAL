@@ -1,0 +1,95 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version": 2,
+	"name": "Blackbox Crack by Webkumal Unlimited copy paste",
+	"version": "2.5.8",
+	"description": "Blackbox Crack by Webkumal Unlimited copy paste",
+
+	"browser_action": {
+		"default_icon": {
+			"19": "/images/icon19.png",
+			"38": "/images/icon38.png"
+		},
+		"default_title": "Blackbox x Webkumal"
+	},
+
+	"content_scripts": [
+		{
+			"js": [
+				"vendor/jquery.min.js",
+				"content/search.js"
+			],
+			"matches": ["<all_urls>"],
+			"css": [
+				"css/content.css",
+				"css/search.css"
+			]
+		}
+	],
+
+	"options_page": "/content/options.html",
+
+	"background": {
+		"scripts": ["public/socket.io.min.js", "background/background.js"],
+		"persistent": false
+	},
+
+	"web_accessible_resources": [
+		"/images/Jcrop.gif",
+		"/images/pixel.png",
+		"images/up.png",
+		"images/down.png",
+		"images/close.png",
+		"images/search-white.svg",
+		"images/loader.svg",
+		"images/onboard-icon.svg",
+		"images/onboard-close.png",
+		"images/save-icon.svg",
+		"css/Roboto-Regular.ttf",
+		"images/LogoWhite.svg",
+		"images/success-icon.svg",
+		"images/closesvgwhite.svg"
+	],
+
+	"commands": {
+		"take-screenshot": {
+			"suggested_key": {
+				"default": "Alt+S",
+				"mac": "Command+E"
+			},
+			"description": "Take Screenshot"
+		},
+		"process-video": {
+			"suggested_key": {
+				"default": "Alt+A",
+				"mac": "Command+K"
+			},
+			"description": "Process youtube video"
+		},
+		"process-visual": {
+			"suggested_key": {
+				"default": "Alt+I",
+				"mac": "Command+I"
+			},
+			"description": "Process youtube video"
+		},
+		"search": {
+			"suggested_key": {
+				"default": "Alt+O",
+				"mac": "Command+J"
+			},
+			"description": "Search"
+		}
+	},
+
+	"icons": {
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+
+	"homepage_url": "https://webkumal.com/",
+	"omnibox": { "keyword": "bx" },
+	"permissions": ["storage", "activeTab", "<all_urls>"]
+}
