@@ -12,3 +12,4 @@ Blackbox adalah ekstensi untuk Chrome dan Edge yang dapat merubah gambar menjadi
 6. Selamat, Blackbox kamu sudah dalam mode premium.
 
 Sekarang, kamu dapat menikmati fitur premium Blackbox tanpa harus membayar atau dibatasi penggunaannya setiap harinya.
+
